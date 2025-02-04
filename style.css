@@ -1,4 +1,4 @@
-/* General Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -53,11 +53,11 @@ body {
     color:blue;
 }
 
-#v1 { color: #0a1d9a; } /* White */
-#i { color: #d40000; } /* Yellow */
-#v2 { color: #df29bb; } /* Pink */
-#a { color: rgb(21, 154, 32); } /* Green */
-#kid { color: #000090; } /* Light Grey */
+#v1 { color: #0a1d9a; } 
+#i { color: #d40000; } 
+#v2 { color: #df29bb; } 
+#a { color: rgb(21, 154, 32); } 
+#kid { color: #000090; } 
 
 
 .LandingPage {
@@ -90,7 +90,7 @@ body {
 
 
 
-/* Gallery Section */
+
 .gallery-container {
     text-align: center;
     padding: 50px 5%;
@@ -147,14 +147,14 @@ body {
 }
 
 
-/* Make the layout responsive */
+
 @media (max-width: 768px) {
     .franchise-image {
-        margin-bottom: 20px; /* Add some space between image and text on mobile */
+        margin-bottom: 20px; 
     }
 }
 
-/* About Us Section */
+
 .about-us {
     padding: 50px 5%;
     text-align: center;
@@ -163,11 +163,10 @@ body {
     border-radius: 10px;
 }
 
-/* Founder Container */
 #founder-container {
     position: relative;
     width: 100%;
-    height: 100vh; /* Full screen height */
+    height: 100vh; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -175,29 +174,29 @@ body {
     overflow: hidden;
 }
 
-/* Background Video */
+
 #founder-video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures full coverage */
+    object-fit: cover; 
     z-index: -2;
 }
 
-/* Overlay for better readability */
+
 .overlay1 {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+    background: rgba(0, 0, 0, 0.5); 
     z-index: -1;
 }
 
-/* Content Wrapper */
+
 .founder-content {
     position: relative;
     z-index: 1;
@@ -206,14 +205,14 @@ body {
     max-width: 1200px;
 }
 
-/* Title */
+
 .founder-content h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: #000000; /* Glowing effect */
 }
 
-/* Founder Cards */
+
 .founder-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -221,25 +220,25 @@ body {
     gap: 30px;
 }
 
-/* Founder Box */
+
 .founder {
     max-width: 400px;
-    background: #918c8c(125, 120, 120, 0.689); /* Light background for better visibility */
+    background: #918c8c(125, 120, 120, 0.689); 
     padding: 20px;
     border-radius: 10px;
-    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    backdrop-filter: blur(10px); 
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Founder Image */
+
 .founder-img {
     width: 100%;
     border-radius: 50%;
     max-width: 150px;
-    border: 3px solid #000000; /* Highlighted border */
+    border: 3px solid #000000; 
 }
 
-/* Founder Text */
+
 .inner-founder h3 {
     font-size: 1.5rem;
     margin-top: 10px;
@@ -251,7 +250,7 @@ body {
     color: #fff;
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 768px) {
     .founder-content h2 {
         font-size: 2rem;
@@ -262,7 +261,7 @@ body {
     }
 }
 
-/* Footer */
+
 .footer {
     padding: 30px;
     background-color: #837b7bc3 ;
@@ -286,12 +285,11 @@ body {
 .footer .fab:hover {
     transform: scale(1.2);
 }
-/* Base styles for the text */
-.popup {
-    transition: transform 1s; /* Adds smooth transition */
-  }
 
-  /* Rotate and increase the size when hovered */
+.popup {
+    transition: transform 1s; 
+
+
   .popup:hover {
     transform:  scale(1.2); 
   }
