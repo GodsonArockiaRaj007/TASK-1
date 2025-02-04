@@ -1,0 +1,298 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+  }
+  
+  h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.navbar {
+      background-color: #918c8c;
+      
+}
+
+
+
+.logo-img {
+    height:60px;
+    margin-right: 10px;
+}
+
+
+.navbar-nav a:hover {
+    color:blue;
+}
+
+#v1 { color: #0a1d9a; } /* White */
+#i { color: #d40000; } /* Yellow */
+#v2 { color: #df29bb; } /* Pink */
+#a { color: rgb(21, 154, 32); } /* Green */
+#kid { color: #000090; } /* Light Grey */
+
+
+.LandingPage {
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    min-height: 80vh;
+    position: relative;
+}
+
+.LandingPic{
+    width: 50%;
+}
+
+.LandingPage .LandingPic img{
+    border-radius: 50px;
+    height: auto;
+}
+
+.LandingContent{
+    padding: 10%;
+   
+}
+
+.welcome{
+    padding: 5%;
+    align-self: center;
+    align-content: center;
+}
+
+
+
+/* Gallery Section */
+.gallery-container {
+    text-align: center;
+    padding: 50px 5%;
+    background: linear-gradient(to bottom, rgb(107, 185, 219), rgb(71, 71, 198));
+    /* background: url('bg4.jpg') no-repeat center center/cover fixed; */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.image-box {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-box:hover {
+    transform: scale(1.05);
+}
+
+.image-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.image-description {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.franchise {
+    padding: 10%;
+}
+.franchise .FranchiseCard{
+    display: flex;
+    flex-direction: row;
+}
+.franchise .FranchiseCard .Add-Content{
+    width: 50%;
+}
+.franchise .FranchiseCard .Add-Content img{
+    border-radius: 10px;
+    width: 50%;
+}
+.franchise .FranchiseCard .Description{
+    width: 50%;
+}
+
+
+/* Make the layout responsive */
+@media (max-width: 768px) {
+    .franchise-image {
+        margin-bottom: 20px; /* Add some space between image and text on mobile */
+    }
+}
+
+/* About Us Section */
+.about-us {
+    padding: 50px 5%;
+    text-align: center;
+    background: url('aboutus-bg.jpg') no-repeat center center/cover;
+    color: rgb(4, 2, 2);
+    border-radius: 10px;
+}
+
+/* Founder Container */
+#founder-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Background Video */
+#founder-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures full coverage */
+    z-index: -2;
+}
+
+/* Overlay for better readability */
+.overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+    z-index: -1;
+}
+
+/* Content Wrapper */
+.founder-content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Title */
+.founder-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #000000; /* Glowing effect */
+}
+
+/* Founder Cards */
+.founder-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Founder Box */
+.founder {
+    max-width: 400px;
+    background: #918c8c(125, 120, 120, 0.689); /* Light background for better visibility */
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Founder Image */
+.founder-img {
+    width: 100%;
+    border-radius: 50%;
+    max-width: 150px;
+    border: 3px solid #000000; /* Highlighted border */
+}
+
+/* Founder Text */
+.inner-founder h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #000000;
+}
+
+.inner-founder p {
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .founder-content h2 {
+        font-size: 2rem;
+    }
+
+    .founder {
+        max-width: 90%;
+    }
+}
+
+/* Footer */
+.footer {
+    padding: 30px;
+    background-color: #837b7bc3 ;
+    color: rgb(0, 0, 0);
+}
+
+.footer a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .fab {
+    transition: transform 0.3s ease;
+}
+
+.footer .fab:hover {
+    transform: scale(1.2);
+}
+/* Base styles for the text */
+.popup {
+    transition: transform 1s; /* Adds smooth transition */
+  }
+
+  /* Rotate and increase the size when hovered */
+  .popup:hover {
+    transform:  scale(1.2); 
+  }
+ 
